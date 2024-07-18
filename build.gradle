@@ -24,10 +24,10 @@ publishing {
     repositories {
         maven {
             name = "GitHubPackages"
-            url = uri("https://maven.pkg.github.com/Naveena134/gradle-project")
+            url = uri("https://maven.pkg.github.com/Shivakumar1702/java-project")
             credentials {
                 username = project.findProperty("gpr.user") ?: System.getenv("USERNAME")
-                password = project.findProperty("gpr.token") ?: System.getenv("mygithub_token")
+                password = project.findProperty("gpr.token") ?: System.getenv("MYGITHUB_TOKEN")
             }
         }
     }
